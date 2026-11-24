@@ -1,0 +1,10 @@
+{
+  "archive_status": "local author-held supplement; not public DOI",
+  "experiment": "post-review exploratory",
+  "n_episodes": 4320,
+  "n_worlds": 12,
+  "n_blocks": 1440,
+  "not_executed_cross_host": true,
+  "unpriced_guard": true,
+  "software": "Python stdlib runtime; optional Matplotlib for plots"
+}

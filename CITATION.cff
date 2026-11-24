@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use the CCF Coordination Benchmark source, synthetic data, or figures, please cite this software release."
+type: software
+authors:
+  - family-names: Addington
+    given-names: Samuel
+title: "CCF Coordination Benchmark: Client Fallback and Control-Plane Placement Under Message Loss"
+version: "1.0.0"
+license: MIT
+keywords:
+  - multi-agent coordination
+  - distributed permit manager
+  - client fallback
+  - synthetic benchmark
+  - message loss
+  - preventive admission
+abstract: >-
+  Author-generated synthetic research software, evaluation records, and figures
+  comparing service-scoped claim, capacity-permit, fallback, and remote-guard
+  coordination configurations under modeled communication loss.

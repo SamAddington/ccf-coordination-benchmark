@@ -1,0 +1,13 @@
+{
+  "source": "only episodes.csv",
+  "planned_attempts": 4320,
+  "actual_attempts": 4320,
+  "matched_threeway_blocks": 1440,
+  "world_count": 12,
+  "trial_seeds_per_world": 3,
+  "failed_executions": 0,
+  "condition_cells": 40,
+  "analysis_status": "pass",
+  "external_research_pre_registration": false,
+  "guard": "shared local atomic (unpriced) or reactive NCP; no remote guard cost"
+}

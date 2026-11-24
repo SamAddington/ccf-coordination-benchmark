@@ -1,0 +1,11 @@
+{
+  "episodes": 1680,
+  "failures": 0,
+  "studies": {
+    "bursty_loss": 240,
+    "claim_timer": 288,
+    "low_loss": 576,
+    "scale_16agents": 288,
+    "ttl": 288
+  }
+}

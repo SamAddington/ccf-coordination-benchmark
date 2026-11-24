@@ -1,0 +1,1842 @@
+[
+  {
+    "loss": 0.0,
+    "horizon": 16.0,
+    "guard": "formal_capacity",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.729745,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 384.277778,
+    "dra_delivery_losses": 0.0,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.281829,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 114.527778,
+    "distributed_lease_delivery_losses": 0.0,
+    "distributed_lease_lease_request_retries": 25.333333,
+    "distributed_capacity_completion_fraction": 0.387442,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 127.916667,
+    "distributed_capacity_delivery_losses": 0.0,
+    "distributed_capacity_lease_request_retries": 14.888889,
+    "dra_minus_distributed_lease_completion_fraction": 44.7917,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      41.522,
+      47.9456
+    ],
+    "dra_minus_distributed_lease_total_messages": 269.75,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      156.2222,
+      385.1111
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 34.2303,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      30.6424,
+      37.4132
+    ],
+    "dra_minus_distributed_capacity_total_messages": 256.3611,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      147.8611,
+      366.0556
+    ]
+  },
+  {
+    "loss": 0.0,
+    "horizon": 16.0,
+    "guard": "formal_capacity",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.729745,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 384.277778,
+    "dra_delivery_losses": 0.0,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.281829,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 114.527778,
+    "distributed_lease_delivery_losses": 0.0,
+    "distributed_lease_lease_request_retries": 25.333333,
+    "distributed_capacity_completion_fraction": 0.387442,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 127.916667,
+    "distributed_capacity_delivery_losses": 0.0,
+    "distributed_capacity_lease_request_retries": 14.888889,
+    "dra_minus_distributed_lease_completion_fraction": 44.7917,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      41.522,
+      47.9456
+    ],
+    "dra_minus_distributed_lease_total_messages": 269.75,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      156.2222,
+      385.1111
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 34.2303,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      30.6424,
+      37.4132
+    ],
+    "dra_minus_distributed_capacity_total_messages": 256.3611,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      147.8611,
+      366.0556
+    ]
+  },
+  {
+    "loss": 0.0,
+    "horizon": 16.0,
+    "guard": "ncp",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.711516,
+    "dra_disruptions": 0.194444,
+    "dra_overcapacity_admissions": 0.361111,
+    "dra_total_messages": 456.305556,
+    "dra_delivery_losses": 0.0,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.277199,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 126.916667,
+    "distributed_lease_delivery_losses": 0.0,
+    "distributed_lease_lease_request_retries": 25.777778,
+    "distributed_capacity_completion_fraction": 0.38831,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 210.055556,
+    "distributed_capacity_delivery_losses": 0.0,
+    "distributed_capacity_lease_request_retries": 14.277778,
+    "dra_minus_distributed_lease_completion_fraction": 43.4317,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      40.9722,
+      45.544
+    ],
+    "dra_minus_distributed_lease_total_messages": 329.3889,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      194.7222,
+      466.6667
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 32.3206,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      29.1667,
+      34.9826
+    ],
+    "dra_minus_distributed_capacity_total_messages": 246.25,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      132.2778,
+      364.3056
+    ]
+  },
+  {
+    "loss": 0.0,
+    "horizon": 16.0,
+    "guard": "ncp",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.723958,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.361111,
+    "dra_total_messages": 461.527778,
+    "dra_delivery_losses": 0.0,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.277199,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 126.916667,
+    "distributed_lease_delivery_losses": 0.0,
+    "distributed_lease_lease_request_retries": 25.777778,
+    "distributed_capacity_completion_fraction": 0.38831,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 210.055556,
+    "distributed_capacity_delivery_losses": 0.0,
+    "distributed_capacity_lease_request_retries": 14.277778,
+    "dra_minus_distributed_lease_completion_fraction": 44.6759,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      41.7824,
+      47.2801
+    ],
+    "dra_minus_distributed_lease_total_messages": 334.6111,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      196.1667,
+      475.0278
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 33.5648,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      29.9769,
+      36.8056
+    ],
+    "dra_minus_distributed_capacity_total_messages": 251.4722,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      134.6944,
+      372.5278
+    ]
+  },
+  {
+    "loss": 0.0,
+    "horizon": 54.0,
+    "guard": "formal_capacity",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 1.0,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 505.277778,
+    "dra_delivery_losses": 0.0,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.848958,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 359.361111,
+    "distributed_lease_delivery_losses": 0.0,
+    "distributed_lease_lease_request_retries": 85.638889,
+    "distributed_capacity_completion_fraction": 0.977431,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 357.972222,
+    "distributed_capacity_delivery_losses": 0.0,
+    "distributed_capacity_lease_request_retries": 50.5,
+    "dra_minus_distributed_lease_completion_fraction": 15.1042,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      9.5486,
+      20.8044
+    ],
+    "dra_minus_distributed_lease_total_messages": 145.9167,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      39.9722,
+      254.6111
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 2.2569,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      0.8681,
+      3.8773
+    ],
+    "dra_minus_distributed_capacity_total_messages": 147.3056,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      57.6111,
+      241.8611
+    ]
+  },
+  {
+    "loss": 0.0,
+    "horizon": 54.0,
+    "guard": "formal_capacity",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 1.0,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 505.277778,
+    "dra_delivery_losses": 0.0,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.848958,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 359.361111,
+    "distributed_lease_delivery_losses": 0.0,
+    "distributed_lease_lease_request_retries": 85.638889,
+    "distributed_capacity_completion_fraction": 0.977431,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 357.972222,
+    "distributed_capacity_delivery_losses": 0.0,
+    "distributed_capacity_lease_request_retries": 50.5,
+    "dra_minus_distributed_lease_completion_fraction": 15.1042,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      9.5486,
+      20.8044
+    ],
+    "dra_minus_distributed_lease_total_messages": 145.9167,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      39.9722,
+      254.6111
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 2.2569,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      0.8681,
+      3.8773
+    ],
+    "dra_minus_distributed_capacity_total_messages": 147.3056,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      57.6111,
+      241.8611
+    ]
+  },
+  {
+    "loss": 0.0,
+    "horizon": 54.0,
+    "guard": "ncp",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 1.0,
+    "dra_disruptions": 0.361111,
+    "dra_overcapacity_admissions": 0.722222,
+    "dra_total_messages": 679.027778,
+    "dra_delivery_losses": 0.0,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.841435,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 458.055556,
+    "distributed_lease_delivery_losses": 0.0,
+    "distributed_lease_lease_request_retries": 87.277778,
+    "distributed_capacity_completion_fraction": 0.974248,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 662.805556,
+    "distributed_capacity_delivery_losses": 0.0,
+    "distributed_capacity_lease_request_retries": 53.055556,
+    "dra_minus_distributed_lease_completion_fraction": 15.8565,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      10.272,
+      21.8171
+    ],
+    "dra_minus_distributed_lease_total_messages": 220.9722,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      72.2778,
+      379.3889
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 2.5752,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      0.5208,
+      5.2083
+    ],
+    "dra_minus_distributed_capacity_total_messages": 16.2222,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      -56.0,
+      105.4444
+    ]
+  },
+  {
+    "loss": 0.0,
+    "horizon": 54.0,
+    "guard": "ncp",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 1.0,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.666667,
+    "dra_total_messages": 655.916667,
+    "dra_delivery_losses": 0.0,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.841435,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 458.055556,
+    "distributed_lease_delivery_losses": 0.0,
+    "distributed_lease_lease_request_retries": 87.277778,
+    "distributed_capacity_completion_fraction": 0.974248,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 662.805556,
+    "distributed_capacity_delivery_losses": 0.0,
+    "distributed_capacity_lease_request_retries": 53.055556,
+    "dra_minus_distributed_lease_completion_fraction": 15.8565,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      10.272,
+      21.8171
+    ],
+    "dra_minus_distributed_lease_total_messages": 197.8611,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      62.9722,
+      337.8333
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 2.5752,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      0.5208,
+      5.2083
+    ],
+    "dra_minus_distributed_capacity_total_messages": -6.8889,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      -65.6944,
+      61.6667
+    ]
+  },
+  {
+    "loss": 0.05,
+    "horizon": 16.0,
+    "guard": "formal_capacity",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.715567,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 367.25,
+    "dra_delivery_losses": 13.888889,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.274595,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 112.555556,
+    "distributed_lease_delivery_losses": 3.166667,
+    "distributed_lease_lease_request_retries": 26.472222,
+    "distributed_capacity_completion_fraction": 0.377025,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 126.027778,
+    "distributed_capacity_delivery_losses": 3.75,
+    "distributed_capacity_lease_request_retries": 15.888889,
+    "dra_minus_distributed_lease_completion_fraction": 44.0972,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      42.0718,
+      46.4699
+    ],
+    "dra_minus_distributed_lease_total_messages": 254.6944,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      150.9722,
+      356.9167
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 33.8542,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      30.7292,
+      36.9213
+    ],
+    "dra_minus_distributed_capacity_total_messages": 241.2222,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      142.3056,
+      339.4722
+    ]
+  },
+  {
+    "loss": 0.05,
+    "horizon": 16.0,
+    "guard": "formal_capacity",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.715567,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 367.25,
+    "dra_delivery_losses": 13.888889,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.274595,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 112.555556,
+    "distributed_lease_delivery_losses": 3.166667,
+    "distributed_lease_lease_request_retries": 26.472222,
+    "distributed_capacity_completion_fraction": 0.377025,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 126.027778,
+    "distributed_capacity_delivery_losses": 3.75,
+    "distributed_capacity_lease_request_retries": 15.888889,
+    "dra_minus_distributed_lease_completion_fraction": 44.0972,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      42.0718,
+      46.4699
+    ],
+    "dra_minus_distributed_lease_total_messages": 254.6944,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      150.9722,
+      356.9167
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 33.8542,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      30.7292,
+      36.9213
+    ],
+    "dra_minus_distributed_capacity_total_messages": 241.2222,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      142.3056,
+      339.4722
+    ]
+  },
+  {
+    "loss": 0.05,
+    "horizon": 16.0,
+    "guard": "ncp",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.712095,
+    "dra_disruptions": 0.138889,
+    "dra_overcapacity_admissions": 0.25,
+    "dra_total_messages": 459.083333,
+    "dra_delivery_losses": 18.277778,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.272569,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 126.277778,
+    "distributed_lease_delivery_losses": 3.583333,
+    "distributed_lease_lease_request_retries": 26.222222,
+    "distributed_capacity_completion_fraction": 0.372396,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 199.416667,
+    "distributed_capacity_delivery_losses": 5.833333,
+    "distributed_capacity_lease_request_retries": 16.472222,
+    "dra_minus_distributed_lease_completion_fraction": 43.9525,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      41.1458,
+      46.6146
+    ],
+    "dra_minus_distributed_lease_total_messages": 332.8056,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      197.5833,
+      467.4444
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 33.9699,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      30.7292,
+      37.0949
+    ],
+    "dra_minus_distributed_capacity_total_messages": 259.6667,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      139.4167,
+      379.9444
+    ]
+  },
+  {
+    "loss": 0.05,
+    "horizon": 16.0,
+    "guard": "ncp",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.724248,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.305556,
+    "dra_total_messages": 461.972222,
+    "dra_delivery_losses": 18.361111,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.272569,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 126.277778,
+    "distributed_lease_delivery_losses": 3.583333,
+    "distributed_lease_lease_request_retries": 26.222222,
+    "distributed_capacity_completion_fraction": 0.372396,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 199.416667,
+    "distributed_capacity_delivery_losses": 5.833333,
+    "distributed_capacity_lease_request_retries": 16.472222,
+    "dra_minus_distributed_lease_completion_fraction": 45.1678,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      42.5058,
+      47.9456
+    ],
+    "dra_minus_distributed_lease_total_messages": 335.6944,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      199.0278,
+      470.8333
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 35.1852,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      31.6551,
+      38.6863
+    ],
+    "dra_minus_distributed_capacity_total_messages": 262.5556,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      141.3611,
+      383.6944
+    ]
+  },
+  {
+    "loss": 0.05,
+    "horizon": 54.0,
+    "guard": "formal_capacity",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 1.0,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 540.611111,
+    "dra_delivery_losses": 22.055556,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.824363,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 357.555556,
+    "distributed_lease_delivery_losses": 12.944444,
+    "distributed_lease_lease_request_retries": 88.777778,
+    "distributed_capacity_completion_fraction": 0.961806,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 359.916667,
+    "distributed_capacity_delivery_losses": 13.166667,
+    "distributed_capacity_lease_request_retries": 54.583333,
+    "dra_minus_distributed_lease_completion_fraction": 17.5637,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      11.0532,
+      23.8715
+    ],
+    "dra_minus_distributed_lease_total_messages": 183.0556,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      58.8056,
+      310.6667
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 3.8194,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      1.3021,
+      6.6551
+    ],
+    "dra_minus_distributed_capacity_total_messages": 180.6944,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      71.4167,
+      295.2222
+    ]
+  },
+  {
+    "loss": 0.05,
+    "horizon": 54.0,
+    "guard": "formal_capacity",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 1.0,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 540.611111,
+    "dra_delivery_losses": 22.055556,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.824363,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 357.555556,
+    "distributed_lease_delivery_losses": 12.944444,
+    "distributed_lease_lease_request_retries": 88.777778,
+    "distributed_capacity_completion_fraction": 0.961806,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 359.916667,
+    "distributed_capacity_delivery_losses": 13.166667,
+    "distributed_capacity_lease_request_retries": 54.583333,
+    "dra_minus_distributed_lease_completion_fraction": 17.5637,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      11.0532,
+      23.8715
+    ],
+    "dra_minus_distributed_lease_total_messages": 183.0556,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      58.8056,
+      310.6667
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 3.8194,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      1.3021,
+      6.6551
+    ],
+    "dra_minus_distributed_capacity_total_messages": 180.6944,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      71.4167,
+      295.2222
+    ]
+  },
+  {
+    "loss": 0.05,
+    "horizon": 54.0,
+    "guard": "ncp",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.999132,
+    "dra_disruptions": 0.527778,
+    "dra_overcapacity_admissions": 0.944444,
+    "dra_total_messages": 728.694444,
+    "dra_delivery_losses": 31.694444,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.811921,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 440.444444,
+    "distributed_lease_delivery_losses": 16.805556,
+    "distributed_lease_lease_request_retries": 90.722222,
+    "distributed_capacity_completion_fraction": 0.947917,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 629.222222,
+    "distributed_capacity_delivery_losses": 26.055556,
+    "distributed_capacity_lease_request_retries": 58.333333,
+    "dra_minus_distributed_lease_completion_fraction": 18.7211,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      12.0949,
+      25.0579
+    ],
+    "dra_minus_distributed_lease_total_messages": 288.25,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      115.0278,
+      461.8611
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 5.1215,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      1.9387,
+      8.912
+    ],
+    "dra_minus_distributed_capacity_total_messages": 99.4722,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      -1.4722,
+      207.3056
+    ]
+  },
+  {
+    "loss": 0.05,
+    "horizon": 54.0,
+    "guard": "ncp",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 1.0,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.833333,
+    "dra_total_messages": 707.0,
+    "dra_delivery_losses": 30.472222,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.811921,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 440.444444,
+    "distributed_lease_delivery_losses": 16.805556,
+    "distributed_lease_lease_request_retries": 90.722222,
+    "distributed_capacity_completion_fraction": 0.947917,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 629.222222,
+    "distributed_capacity_delivery_losses": 26.055556,
+    "distributed_capacity_lease_request_retries": 58.333333,
+    "dra_minus_distributed_lease_completion_fraction": 18.8079,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      12.1238,
+      25.2894
+    ],
+    "dra_minus_distributed_lease_total_messages": 266.5556,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      106.75,
+      431.1667
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 5.2083,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      1.9965,
+      9.0856
+    ],
+    "dra_minus_distributed_capacity_total_messages": 77.7778,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      -12.4722,
+      174.1944
+    ]
+  },
+  {
+    "loss": 0.1,
+    "horizon": 16.0,
+    "guard": "formal_capacity",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.692998,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 361.805556,
+    "dra_delivery_losses": 30.083333,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.251447,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 109.75,
+    "distributed_lease_delivery_losses": 7.944444,
+    "distributed_lease_lease_request_retries": 27.777778,
+    "distributed_capacity_completion_fraction": 0.353299,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 123.138889,
+    "distributed_capacity_delivery_losses": 9.111111,
+    "distributed_capacity_lease_request_retries": 17.527778,
+    "dra_minus_distributed_lease_completion_fraction": 44.1551,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      41.8981,
+      46.2674
+    ],
+    "dra_minus_distributed_lease_total_messages": 252.0556,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      152.4722,
+      350.4167
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 33.9699,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      30.4977,
+      37.2975
+    ],
+    "dra_minus_distributed_capacity_total_messages": 238.6667,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      142.75,
+      334.3056
+    ]
+  },
+  {
+    "loss": 0.1,
+    "horizon": 16.0,
+    "guard": "formal_capacity",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.692998,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 361.805556,
+    "dra_delivery_losses": 30.083333,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.251447,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 109.75,
+    "distributed_lease_delivery_losses": 7.944444,
+    "distributed_lease_lease_request_retries": 27.777778,
+    "distributed_capacity_completion_fraction": 0.353299,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 123.138889,
+    "distributed_capacity_delivery_losses": 9.111111,
+    "distributed_capacity_lease_request_retries": 17.527778,
+    "dra_minus_distributed_lease_completion_fraction": 44.1551,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      41.8981,
+      46.2674
+    ],
+    "dra_minus_distributed_lease_total_messages": 252.0556,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      152.4722,
+      350.4167
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 33.9699,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      30.4977,
+      37.2975
+    ],
+    "dra_minus_distributed_capacity_total_messages": 238.6667,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      142.75,
+      334.3056
+    ]
+  },
+  {
+    "loss": 0.1,
+    "horizon": 16.0,
+    "guard": "ncp",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.683738,
+    "dra_disruptions": 0.333333,
+    "dra_overcapacity_admissions": 0.472222,
+    "dra_total_messages": 451.722222,
+    "dra_delivery_losses": 39.638889,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.263889,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 122.916667,
+    "distributed_lease_delivery_losses": 9.027778,
+    "distributed_lease_lease_request_retries": 27.138889,
+    "distributed_capacity_completion_fraction": 0.336806,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 186.611111,
+    "distributed_capacity_delivery_losses": 14.388889,
+    "distributed_capacity_lease_request_retries": 18.666667,
+    "dra_minus_distributed_lease_completion_fraction": 41.985,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      40.3067,
+      43.5185
+    ],
+    "dra_minus_distributed_lease_total_messages": 328.8056,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      201.4722,
+      453.9167
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 34.6933,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      32.3495,
+      36.603
+    ],
+    "dra_minus_distributed_capacity_total_messages": 265.1111,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      150.5278,
+      381.2778
+    ]
+  },
+  {
+    "loss": 0.1,
+    "horizon": 16.0,
+    "guard": "ncp",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.700231,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.472222,
+    "dra_total_messages": 458.777778,
+    "dra_delivery_losses": 40.222222,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.263889,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 122.916667,
+    "distributed_lease_delivery_losses": 9.027778,
+    "distributed_lease_lease_request_retries": 27.138889,
+    "distributed_capacity_completion_fraction": 0.336806,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 186.611111,
+    "distributed_capacity_delivery_losses": 14.388889,
+    "distributed_capacity_lease_request_retries": 18.666667,
+    "dra_minus_distributed_lease_completion_fraction": 43.6343,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      41.6088,
+      45.2836
+    ],
+    "dra_minus_distributed_lease_total_messages": 335.8611,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      203.5,
+      469.5833
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 36.3426,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      33.2176,
+      39.0625
+    ],
+    "dra_minus_distributed_capacity_total_messages": 272.1667,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      151.6389,
+      397.5833
+    ]
+  },
+  {
+    "loss": 0.1,
+    "horizon": 54.0,
+    "guard": "formal_capacity",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.998843,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 570.527778,
+    "dra_delivery_losses": 51.777778,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.755498,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 348.444444,
+    "distributed_lease_delivery_losses": 29.194444,
+    "distributed_lease_lease_request_retries": 96.0,
+    "distributed_capacity_completion_fraction": 0.913773,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 357.75,
+    "distributed_capacity_delivery_losses": 30.277778,
+    "distributed_capacity_lease_request_retries": 61.777778,
+    "dra_minus_distributed_lease_completion_fraction": 24.3345,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      16.6667,
+      31.7708
+    ],
+    "dra_minus_distributed_lease_total_messages": 222.0833,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      82.75,
+      365.2222
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 8.5069,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      3.9062,
+      13.4838
+    ],
+    "dra_minus_distributed_capacity_total_messages": 212.7778,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      90.0556,
+      339.4444
+    ]
+  },
+  {
+    "loss": 0.1,
+    "horizon": 54.0,
+    "guard": "formal_capacity",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.998843,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 570.527778,
+    "dra_delivery_losses": 51.777778,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.755498,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 348.444444,
+    "distributed_lease_delivery_losses": 29.194444,
+    "distributed_lease_lease_request_retries": 96.0,
+    "distributed_capacity_completion_fraction": 0.913773,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 357.75,
+    "distributed_capacity_delivery_losses": 30.277778,
+    "distributed_capacity_lease_request_retries": 61.777778,
+    "dra_minus_distributed_lease_completion_fraction": 24.3345,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      16.6667,
+      31.7708
+    ],
+    "dra_minus_distributed_lease_total_messages": 222.0833,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      82.75,
+      365.2222
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 8.5069,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      3.9062,
+      13.4838
+    ],
+    "dra_minus_distributed_capacity_total_messages": 212.7778,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      90.0556,
+      339.4444
+    ]
+  },
+  {
+    "loss": 0.1,
+    "horizon": 54.0,
+    "guard": "ncp",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.999132,
+    "dra_disruptions": 1.0,
+    "dra_overcapacity_admissions": 1.472222,
+    "dra_total_messages": 787.416667,
+    "dra_delivery_losses": 73.361111,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.785012,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 420.444444,
+    "distributed_lease_delivery_losses": 35.638889,
+    "distributed_lease_lease_request_retries": 93.194444,
+    "distributed_capacity_completion_fraction": 0.908565,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 610.055556,
+    "distributed_capacity_delivery_losses": 54.75,
+    "distributed_capacity_lease_request_retries": 62.5,
+    "dra_minus_distributed_lease_completion_fraction": 21.412,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      13.9757,
+      28.3565
+    ],
+    "dra_minus_distributed_lease_total_messages": 366.9722,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      160.5556,
+      588.3056
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 9.0567,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      4.1377,
+      14.4387
+    ],
+    "dra_minus_distributed_capacity_total_messages": 177.3611,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      33.3889,
+      337.5833
+    ]
+  },
+  {
+    "loss": 0.1,
+    "horizon": 54.0,
+    "guard": "ncp",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 1.0,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 1.055556,
+    "dra_total_messages": 739.583333,
+    "dra_delivery_losses": 68.138889,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.785012,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 420.444444,
+    "distributed_lease_delivery_losses": 35.638889,
+    "distributed_lease_lease_request_retries": 93.194444,
+    "distributed_capacity_completion_fraction": 0.908565,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 610.055556,
+    "distributed_capacity_delivery_losses": 54.75,
+    "distributed_capacity_lease_request_retries": 62.5,
+    "dra_minus_distributed_lease_completion_fraction": 21.4988,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      14.0046,
+      28.5301
+    ],
+    "dra_minus_distributed_lease_total_messages": 319.1389,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      139.1944,
+      503.9444
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 9.1435,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      4.1667,
+      14.5255
+    ],
+    "dra_minus_distributed_capacity_total_messages": 129.5278,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      13.2222,
+      254.1944
+    ]
+  },
+  {
+    "loss": 0.2,
+    "horizon": 16.0,
+    "guard": "formal_capacity",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.645833,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 343.166667,
+    "dra_delivery_losses": 66.138889,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.226852,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 105.138889,
+    "distributed_lease_delivery_losses": 17.472222,
+    "distributed_lease_lease_request_retries": 29.277778,
+    "distributed_capacity_completion_fraction": 0.320023,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 117.583333,
+    "distributed_capacity_delivery_losses": 19.638889,
+    "distributed_capacity_lease_request_retries": 20.75,
+    "dra_minus_distributed_lease_completion_fraction": 41.8981,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      39.6412,
+      44.2419
+    ],
+    "dra_minus_distributed_lease_total_messages": 238.0278,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      141.6389,
+      334.5556
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 32.581,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      28.6458,
+      35.7639
+    ],
+    "dra_minus_distributed_capacity_total_messages": 225.5833,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      133.0556,
+      318.5
+    ]
+  },
+  {
+    "loss": 0.2,
+    "horizon": 16.0,
+    "guard": "formal_capacity",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.645833,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 343.166667,
+    "dra_delivery_losses": 66.138889,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.226852,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 105.138889,
+    "distributed_lease_delivery_losses": 17.472222,
+    "distributed_lease_lease_request_retries": 29.277778,
+    "distributed_capacity_completion_fraction": 0.320023,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 117.583333,
+    "distributed_capacity_delivery_losses": 19.638889,
+    "distributed_capacity_lease_request_retries": 20.75,
+    "dra_minus_distributed_lease_completion_fraction": 41.8981,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      39.6412,
+      44.2419
+    ],
+    "dra_minus_distributed_lease_total_messages": 238.0278,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      141.6389,
+      334.5556
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 32.581,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      28.6458,
+      35.7639
+    ],
+    "dra_minus_distributed_capacity_total_messages": 225.5833,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      133.0556,
+      318.5
+    ]
+  },
+  {
+    "loss": 0.2,
+    "horizon": 16.0,
+    "guard": "ncp",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.649016,
+    "dra_disruptions": 0.222222,
+    "dra_overcapacity_admissions": 0.555556,
+    "dra_total_messages": 446.0,
+    "dra_delivery_losses": 86.583333,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.23206,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 116.388889,
+    "distributed_lease_delivery_losses": 19.583333,
+    "distributed_lease_lease_request_retries": 29.444444,
+    "distributed_capacity_completion_fraction": 0.305845,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 160.777778,
+    "distributed_capacity_delivery_losses": 27.805556,
+    "distributed_capacity_lease_request_retries": 22.027778,
+    "dra_minus_distributed_lease_completion_fraction": 41.6956,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      39.0914,
+      44.4444
+    ],
+    "dra_minus_distributed_lease_total_messages": 329.6111,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      198.0833,
+      463.25
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 34.3171,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      30.5845,
+      37.6736
+    ],
+    "dra_minus_distributed_capacity_total_messages": 285.2222,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      161.0278,
+      413.1389
+    ]
+  },
+  {
+    "loss": 0.2,
+    "horizon": 16.0,
+    "guard": "ncp",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.653067,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.555556,
+    "dra_total_messages": 443.555556,
+    "dra_delivery_losses": 86.083333,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.23206,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 116.388889,
+    "distributed_lease_delivery_losses": 19.583333,
+    "distributed_lease_lease_request_retries": 29.444444,
+    "distributed_capacity_completion_fraction": 0.305845,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 160.777778,
+    "distributed_capacity_delivery_losses": 27.805556,
+    "distributed_capacity_lease_request_retries": 22.027778,
+    "dra_minus_distributed_lease_completion_fraction": 42.1007,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      39.4097,
+      44.9074
+    ],
+    "dra_minus_distributed_lease_total_messages": 327.1667,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      196.0833,
+      458.9167
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 34.7222,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      30.7581,
+      38.2812
+    ],
+    "dra_minus_distributed_capacity_total_messages": 282.7778,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      159.3889,
+      409.6667
+    ]
+  },
+  {
+    "loss": 0.2,
+    "horizon": 54.0,
+    "guard": "formal_capacity",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 1.0,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 650.888889,
+    "dra_delivery_losses": 126.166667,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.639468,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 331.805556,
+    "distributed_lease_delivery_losses": 62.888889,
+    "distributed_lease_lease_request_retries": 105.638889,
+    "distributed_capacity_completion_fraction": 0.83044,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 351.138889,
+    "distributed_capacity_delivery_losses": 67.694444,
+    "distributed_capacity_lease_request_retries": 73.055556,
+    "dra_minus_distributed_lease_completion_fraction": 36.0532,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      29.1667,
+      42.3611
+    ],
+    "dra_minus_distributed_lease_total_messages": 319.0833,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      136.0,
+      506.1389
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 16.956,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      10.2431,
+      23.4086
+    ],
+    "dra_minus_distributed_capacity_total_messages": 299.75,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      129.1667,
+      475.8889
+    ]
+  },
+  {
+    "loss": 0.2,
+    "horizon": 54.0,
+    "guard": "formal_capacity",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 1.0,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 650.888889,
+    "dra_delivery_losses": 126.166667,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.639468,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 331.805556,
+    "distributed_lease_delivery_losses": 62.888889,
+    "distributed_lease_lease_request_retries": 105.638889,
+    "distributed_capacity_completion_fraction": 0.83044,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 351.138889,
+    "distributed_capacity_delivery_losses": 67.694444,
+    "distributed_capacity_lease_request_retries": 73.055556,
+    "dra_minus_distributed_lease_completion_fraction": 36.0532,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      29.1667,
+      42.3611
+    ],
+    "dra_minus_distributed_lease_total_messages": 319.0833,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      136.0,
+      506.1389
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 16.956,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      10.2431,
+      23.4086
+    ],
+    "dra_minus_distributed_capacity_total_messages": 299.75,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      129.1667,
+      475.8889
+    ]
+  },
+  {
+    "loss": 0.2,
+    "horizon": 54.0,
+    "guard": "ncp",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 1.0,
+    "dra_disruptions": 1.138889,
+    "dra_overcapacity_admissions": 2.25,
+    "dra_total_messages": 912.611111,
+    "dra_delivery_losses": 178.055556,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.618056,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 380.222222,
+    "distributed_lease_delivery_losses": 73.583333,
+    "distributed_lease_lease_request_retries": 106.083333,
+    "distributed_capacity_completion_fraction": 0.816262,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 529.305556,
+    "distributed_capacity_delivery_losses": 103.555556,
+    "distributed_capacity_lease_request_retries": 75.722222,
+    "dra_minus_distributed_lease_completion_fraction": 38.1944,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      31.6551,
+      44.3576
+    ],
+    "dra_minus_distributed_lease_total_messages": 532.3889,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      254.3611,
+      815.2778
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 18.3738,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      11.6319,
+      25.434
+    ],
+    "dra_minus_distributed_capacity_total_messages": 383.3056,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      156.2222,
+      615.8056
+    ]
+  },
+  {
+    "loss": 0.2,
+    "horizon": 54.0,
+    "guard": "ncp",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 1.0,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 1.944444,
+    "dra_total_messages": 896.472222,
+    "dra_delivery_losses": 175.166667,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.618056,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 380.222222,
+    "distributed_lease_delivery_losses": 73.583333,
+    "distributed_lease_lease_request_retries": 106.083333,
+    "distributed_capacity_completion_fraction": 0.816262,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 529.305556,
+    "distributed_capacity_delivery_losses": 103.555556,
+    "distributed_capacity_lease_request_retries": 75.722222,
+    "dra_minus_distributed_lease_completion_fraction": 38.1944,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      31.6551,
+      44.3576
+    ],
+    "dra_minus_distributed_lease_total_messages": 516.25,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      240.8056,
+      792.4167
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 18.3738,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      11.6319,
+      25.434
+    ],
+    "dra_minus_distributed_capacity_total_messages": 367.1667,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      145.3889,
+      594.1944
+    ]
+  },
+  {
+    "loss": 0.35,
+    "horizon": 16.0,
+    "guard": "formal_capacity",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.598669,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 336.444444,
+    "dra_delivery_losses": 111.25,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.188947,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 95.5,
+    "distributed_lease_delivery_losses": 29.555556,
+    "distributed_lease_lease_request_retries": 33.194444,
+    "distributed_capacity_completion_fraction": 0.258391,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 106.472222,
+    "distributed_capacity_delivery_losses": 33.361111,
+    "distributed_capacity_lease_request_retries": 26.166667,
+    "dra_minus_distributed_lease_completion_fraction": 40.9722,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      36.8634,
+      44.7049
+    ],
+    "dra_minus_distributed_lease_total_messages": 240.9444,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      142.3333,
+      337.8056
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 34.0278,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      29.5718,
+      38.0498
+    ],
+    "dra_minus_distributed_capacity_total_messages": 229.9722,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      135.6667,
+      322.4722
+    ]
+  },
+  {
+    "loss": 0.35,
+    "horizon": 16.0,
+    "guard": "formal_capacity",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.598669,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 336.444444,
+    "dra_delivery_losses": 111.25,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.188947,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 95.5,
+    "distributed_lease_delivery_losses": 29.555556,
+    "distributed_lease_lease_request_retries": 33.194444,
+    "distributed_capacity_completion_fraction": 0.258391,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 106.472222,
+    "distributed_capacity_delivery_losses": 33.361111,
+    "distributed_capacity_lease_request_retries": 26.166667,
+    "dra_minus_distributed_lease_completion_fraction": 40.9722,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      36.8634,
+      44.7049
+    ],
+    "dra_minus_distributed_lease_total_messages": 240.9444,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      142.3333,
+      337.8056
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 34.0278,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      29.5718,
+      38.0498
+    ],
+    "dra_minus_distributed_capacity_total_messages": 229.9722,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      135.6667,
+      322.4722
+    ]
+  },
+  {
+    "loss": 0.35,
+    "horizon": 16.0,
+    "guard": "ncp",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.586516,
+    "dra_disruptions": 0.444444,
+    "dra_overcapacity_admissions": 0.888889,
+    "dra_total_messages": 442.277778,
+    "dra_delivery_losses": 146.888889,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.191551,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 104.611111,
+    "distributed_lease_delivery_losses": 32.75,
+    "distributed_lease_lease_request_retries": 32.833333,
+    "distributed_capacity_completion_fraction": 0.2636,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 136.527778,
+    "distributed_capacity_delivery_losses": 42.944444,
+    "distributed_capacity_lease_request_retries": 26.5,
+    "dra_minus_distributed_lease_completion_fraction": 39.4965,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      34.8958,
+      43.5764
+    ],
+    "dra_minus_distributed_lease_total_messages": 337.6667,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      203.5278,
+      472.4444
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 32.2917,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      27.1412,
+      36.9502
+    ],
+    "dra_minus_distributed_capacity_total_messages": 305.75,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      177.5833,
+      436.1111
+    ]
+  },
+  {
+    "loss": 0.35,
+    "horizon": 16.0,
+    "guard": "ncp",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.600116,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 1.027778,
+    "dra_total_messages": 442.25,
+    "dra_delivery_losses": 146.527778,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.191551,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 104.611111,
+    "distributed_lease_delivery_losses": 32.75,
+    "distributed_lease_lease_request_retries": 32.833333,
+    "distributed_capacity_completion_fraction": 0.2636,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 136.527778,
+    "distributed_capacity_delivery_losses": 42.944444,
+    "distributed_capacity_lease_request_retries": 26.5,
+    "dra_minus_distributed_lease_completion_fraction": 40.8565,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      36.8345,
+      44.8206
+    ],
+    "dra_minus_distributed_lease_total_messages": 337.6389,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      201.7778,
+      473.75
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 33.6516,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      28.6169,
+      38.4549
+    ],
+    "dra_minus_distributed_capacity_total_messages": 305.7222,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      176.5556,
+      436.4722
+    ]
+  },
+  {
+    "loss": 0.35,
+    "horizon": 54.0,
+    "guard": "formal_capacity",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.997396,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 721.055556,
+    "dra_delivery_losses": 243.166667,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.493056,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 305.138889,
+    "distributed_lease_delivery_losses": 98.333333,
+    "distributed_lease_lease_request_retries": 118.527778,
+    "distributed_capacity_completion_fraction": 0.684896,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 331.75,
+    "distributed_capacity_delivery_losses": 107.888889,
+    "distributed_capacity_lease_request_retries": 91.888889,
+    "dra_minus_distributed_lease_completion_fraction": 50.434,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      43.9815,
+      56.7998
+    ],
+    "dra_minus_distributed_lease_total_messages": 415.9167,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      192.8333,
+      641.8333
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 31.25,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      23.0903,
+      39.0914
+    ],
+    "dra_minus_distributed_capacity_total_messages": 389.3056,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      177.8889,
+      606.3611
+    ]
+  },
+  {
+    "loss": 0.35,
+    "horizon": 54.0,
+    "guard": "formal_capacity",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.997396,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 0.0,
+    "dra_total_messages": 721.055556,
+    "dra_delivery_losses": 243.166667,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.493056,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 305.138889,
+    "distributed_lease_delivery_losses": 98.333333,
+    "distributed_lease_lease_request_retries": 118.527778,
+    "distributed_capacity_completion_fraction": 0.684896,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 331.75,
+    "distributed_capacity_delivery_losses": 107.888889,
+    "distributed_capacity_lease_request_retries": 91.888889,
+    "dra_minus_distributed_lease_completion_fraction": 50.434,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      43.9815,
+      56.7998
+    ],
+    "dra_minus_distributed_lease_total_messages": 415.9167,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      192.8333,
+      641.8333
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 31.25,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      23.0903,
+      39.0914
+    ],
+    "dra_minus_distributed_capacity_total_messages": 389.3056,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      177.8889,
+      606.3611
+    ]
+  },
+  {
+    "loss": 0.35,
+    "horizon": 54.0,
+    "guard": "ncp",
+    "physics": "reference",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.990741,
+    "dra_disruptions": 2.444444,
+    "dra_overcapacity_admissions": 4.305556,
+    "dra_total_messages": 1083.944444,
+    "dra_delivery_losses": 370.777778,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.493634,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 338.194444,
+    "distributed_lease_delivery_losses": 110.416667,
+    "distributed_lease_lease_request_retries": 117.666667,
+    "distributed_capacity_completion_fraction": 0.690683,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 443.555556,
+    "distributed_capacity_delivery_losses": 146.666667,
+    "distributed_capacity_lease_request_retries": 91.416667,
+    "dra_minus_distributed_lease_completion_fraction": 49.7106,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      42.7662,
+      56.0475
+    ],
+    "dra_minus_distributed_lease_total_messages": 745.75,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      377.1667,
+      1114.8611
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 30.0058,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      20.9201,
+      38.2812
+    ],
+    "dra_minus_distributed_capacity_total_messages": 640.3889,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      297.1111,
+      992.6667
+    ]
+  },
+  {
+    "loss": 0.35,
+    "horizon": 54.0,
+    "guard": "ncp",
+    "physics": "no_overcapacity_penalty",
+    "blocks": 36,
+    "worlds": 12,
+    "dra_completion_fraction": 0.999132,
+    "dra_disruptions": 0.0,
+    "dra_overcapacity_admissions": 3.888889,
+    "dra_total_messages": 1068.333333,
+    "dra_delivery_losses": 365.25,
+    "dra_lease_request_retries": 0.0,
+    "distributed_lease_completion_fraction": 0.493634,
+    "distributed_lease_disruptions": 0.0,
+    "distributed_lease_overcapacity_admissions": 0.0,
+    "distributed_lease_total_messages": 338.194444,
+    "distributed_lease_delivery_losses": 110.416667,
+    "distributed_lease_lease_request_retries": 117.666667,
+    "distributed_capacity_completion_fraction": 0.690683,
+    "distributed_capacity_disruptions": 0.0,
+    "distributed_capacity_overcapacity_admissions": 0.0,
+    "distributed_capacity_total_messages": 443.555556,
+    "distributed_capacity_delivery_losses": 146.666667,
+    "distributed_capacity_lease_request_retries": 91.416667,
+    "dra_minus_distributed_lease_completion_fraction": 50.5498,
+    "dra_minus_distributed_lease_completion_fraction_world95": [
+      43.2002,
+      57.2917
+    ],
+    "dra_minus_distributed_lease_total_messages": 730.1389,
+    "dra_minus_distributed_lease_total_messages_world95": [
+      358.1389,
+      1109.0556
+    ],
+    "dra_minus_distributed_capacity_completion_fraction": 30.8449,
+    "dra_minus_distributed_capacity_completion_fraction_world95": [
+      21.3252,
+      39.5544
+    ],
+    "dra_minus_distributed_capacity_total_messages": 624.7778,
+    "dra_minus_distributed_capacity_total_messages_world95": [
+      275.0833,
+      981.6944
+    ]
+  }
+]

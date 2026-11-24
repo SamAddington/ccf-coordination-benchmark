@@ -1,0 +1,2 @@
+# Optional dependency for figure regeneration only; simulation uses stdlib.
+matplotlib==3.10.8

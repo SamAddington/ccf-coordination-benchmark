@@ -1,0 +1,34 @@
+{
+  "actual_attempts": 2592,
+  "planned_attempts": 2592,
+  "completed": 2592,
+  "failure_count": 0,
+  "worlds": 12,
+  "seeds": 3,
+  "arms": [
+    "claim_local",
+    "claim_remote",
+    "independent_local",
+    "independent_remote",
+    "permit_sticky",
+    "permit_fallback",
+    "permit_fallback_retx",
+    "permit_colocated",
+    "permit_colocated_fallback"
+  ],
+  "losses": [
+    0.0,
+    0.05,
+    0.2,
+    0.35
+  ],
+  "horizons": [
+    16.0,
+    54.0
+  ],
+  "source_sha256": {
+    "/mnt/data/ccf_v26_work/fairness/fair_engines.py": "8dbd91e999e41ba7daf86736d9d4515235db19824658c690f13147c6b5e40bb0",
+    "/mnt/data/ccf_v26_work/fairness/run_fair_comparison.py": "2b5fe0cb496a5acadf2505a534f6c78d7f73b3235c1682401a2023bbe2d7596b"
+  },
+  "study": "post-review exploratory; not independently preregistered; same original generator; new seeds"
+}

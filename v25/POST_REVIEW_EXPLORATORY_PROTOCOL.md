@@ -1,0 +1,12 @@
+# Post-review exploratory robustness experiment (specified before local execution)
+Date: 23 November 2026. This is NOT externally preregistered, and the new worlds are only seed-disjoint from the previous author-built experiments; no independent service validation is implied.
+
+Primary question: does the comparative completion gap between service-claim DRA and a capacity-matched, single-service-authority permit manager depend on message loss when delays and admission behavior are held constant?
+
+Worlds: 12 newly generated small/medium/large worlds indexed 100–111, each with one of 4/6/8 services, 4 authorized tasks/service and two forbidden catalogue entries. Three trial seeds 60100, 60101, 60102. The world generator, task outcomes, and engine remain the archived v15 source, unmodified. No packet outcomes are paired one-to-one when protocols emit different traffic.
+
+Factors: controllers (DRA, sharded one-holder lease, capacity-matched sharded permit semaphore); loss [0,0.05,0.10,0.20,0.35] independently Bernoulli for interagent network traffic; fixed delay Uniform(.35,.95) time units; admission control [atomic local guard (unpriced, non-networked), reactive NCP]; physics [original stress drift, no overcapacity term]; horizons [16,54] with all tasks initially available. Full planned size 12*3*5*3*2*2*2=4320 attempts, 1440 matched three-way blocks. Every attempted run retained including failures; do not compute complete-case summary for blocks with any failed attempt.
+
+Outcomes: per-episode completed-task fraction, modeled disruptions (only simulator construct), overcapacity admissions, sends, dropped messages, retries, and service permit wait where applicable. Comparison uses world as cluster (12 independent generated worlds, with three reused trials each) and descriptive bootstrap with 4,000 replicates; no confirmatory significance inference. Baseline protocol timeout is max(0.22, 2*delay_max+0.22)=2.12 simulated time units; busy responses retry by min(expiry+.02, now+1.05); lease TTL=8.0; holder requires now+4.4<expiry; missing responses retry with same nonce. This comparator is intentionally not optimized to outperform DRA, and the guard is free in each arm. The result cannot estimate intrinsic coordination algorithm quality or production performance.
+
+We will report both positive and negative contrasts and may not hide failures, isolated cells, or ordinal reversals. Any new manuscript claim will be restricted to the declared synthetic setting and labeled exploratory/post-review.

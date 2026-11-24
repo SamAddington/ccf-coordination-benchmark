@@ -1,0 +1,13 @@
+{
+  "pass": true,
+  "v25_original_episodes": 4320,
+  "v25_factor_cells": 40,
+  "v26_primary_episodes": 2592,
+  "primary_condition_cells": 72,
+  "primary_repetitions_per_cell": 36,
+  "v26_sensitivity_episodes": 1680,
+  "primary_source_replays": 27,
+  "fields_per_replay": 6,
+  "cross_host_reproduction": false,
+  "independent_human_reproduction": false
+}
