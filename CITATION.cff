@@ -4,8 +4,8 @@ type: software
 authors:
   - family-names: Addington
     given-names: Samuel
-title: "CCF Coordination Benchmark: Client Fallback and Control-Plane Placement Under Message Loss"
-version: "1.0.0"
+title: "CCF Coordination Benchmark: Admission and Settlement Timing Sensitivity Under Message Loss"
+version: "1.1.0"
 license: MIT
 keywords:
   - multi-agent coordination

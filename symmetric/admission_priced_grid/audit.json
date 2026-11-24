@@ -1,0 +1,10 @@
+{
+  "episodes": 9072,
+  "failures": 0,
+  "summary_cells": 252,
+  "paired_contrasts": 252,
+  "worlds": 12,
+  "design": "3 arms \u00d7 7 delays \u00d7 6 deadlines \u00d7 2 loss \u00d7 12 worlds \u00d7 3 trials",
+  "bootstrap": "world-cluster resamples 4000 seed 2602",
+  "source": "Exploratory simulator; not independent multi-host evaluation"
+}

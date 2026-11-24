@@ -1,0 +1,5 @@
+{
+  "episodes": 1152,
+  "failures": 0,
+  "model": "fixed d 0.65 (uniform mean) vs fixed d 0.95 (uniform upper bound); synthetic only"
+}

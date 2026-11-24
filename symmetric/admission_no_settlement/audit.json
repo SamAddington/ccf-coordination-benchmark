@@ -1,0 +1,5 @@
+{
+  "episodes": 288,
+  "failures": 0,
+  "method": "No wait after remote claim publication, followed by remote service guard RPC; sensitivity only"
+}

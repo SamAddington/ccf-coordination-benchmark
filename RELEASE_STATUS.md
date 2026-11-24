@@ -1,9 +1,11 @@
-# Repository release status and evidence boundary
+# Proposed v1.1.0 release — NOT YET PUBLISHED
 
-This source tree is prepared as a **GitHub repository upload package**. Its presence in a downloadable ZIP is **not proof** that a GitHub repository, release tag, or Zenodo DOI exists.
+Snapshot date: 2026-11-24. This is a publication candidate, not a released GitHub tag or an archived Zenodo version.
 
-The original CCF source code, synthetic datasets and generated figures are authorized for MIT redistribution by the copyright owner Samuel Addington (24 November 2026). The complete experiment records and source are preserved. The included tests were checked in a clean local extraction; a separately reported author-operated Ubuntu/WSL2 rerun also matched the frozen experiments, but operator and machine control have not been independently authenticated.
+- **Ready locally:** MIT ownership/licensing declaration, v28 source, 12,816 admission-pricing episodes and 1,728 additional timing/delay-law episodes, full 84-condition table, checksum manifest, working smoke/full reproducibility runners, and refreshed CI.
+- **Verified locally:** frozen data and source manifest, fresh-extraction smoke, and prior same-host full replay.
+- **Author-reported separate-environment smoke:** 860 episode records / 18,144 values matched; 21 evidence hashes and five exit-zero logs checked; no machine/identity authentication.
+- **Still pending:** the author-operated **full** 12,816-episode run and signed attestation; a new public GitHub tag and Zenodo version DOI; external scientific validation.
+- **Historical:** GitHub v1.0.0 and DOI 10.5281/zenodo.24511437 identify the previous artifact only.
 
-Before citing a specific version, publish the repository, create a fixed tag and GitHub release, connect Zenodo (if desired), and verify any assigned DOI in a logged-out browser. Then update `CITATION.cff` and the manuscript's data/code availability text **with the actual identifiers**.
-
-Do not present the simulated network treatments as deployed network measurements or claim external third-party reproduction.
+Do not alter the old v1.0.0 Git tag, rewrite its archived source, or cite its DOI for the new admission-pricing study. After a verified full author run, publish a **new** immutable `v1.1.0` release and record the actual version-specific DOI.

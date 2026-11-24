@@ -1,0 +1,6 @@
+{
+  "episodes": 288,
+  "failures": 0,
+  "hop_delay": "fixed 0.65",
+  "settlement": "1.08 model units"
+}

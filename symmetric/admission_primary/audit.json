@@ -1,0 +1,8 @@
+{
+  "episodes": 3456,
+  "failed": 0,
+  "cells": 96,
+  "contrasts": 96,
+  "context": "second phase after simulator finished",
+  "method": "world-level 4000-bootstrap seed 2602"
+}

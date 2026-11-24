@@ -1,0 +1,15 @@
+{
+  "primary_rows": 3456,
+  "no_wait_rows": 288,
+  "new_overlap_rows": 288,
+  "new_delay_rows": 1152,
+  "new_full_wait_rows": 288,
+  "complete_s1_conditions": 84,
+  "negative_grid_mean_cells": 4,
+  "negative_cells_with_interval_below_zero": 1,
+  "ablation_cells": 8,
+  "delay_law_cells": 8,
+  "new_episodes": 1728,
+  "source_design": "Post-review exploratory; 12 previously reused generated worlds, three common seeds",
+  "uncertainty": "Descriptive 4000-resample world-cluster intervals, not multiplicity adjusted"
+}

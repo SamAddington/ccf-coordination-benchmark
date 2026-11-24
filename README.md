@@ -1,76 +1,68 @@
 # CCF Coordination Benchmark
 
-**Client Fallback and Control-Plane Placement Reverse Coordination Rankings Under Message Loss**  
-Research software, synthetic evaluation records, and graphical analyses by Samuel Addington.
+**Admission and settlement timing in service-claim and capacity-permit coordination: a synthetic negative-result study**
 
-This repository holds a **simulation-based, exploratory** comparison of service-level claim protocols, remote permit managers, client fallback, and admission-guard placement under modeled message loss. The main finding is conditional: **the ranking of coordination approaches changes with client fallback and the communication location of the guard/manager.** It does not show that any approach is universally superior, nor does it measure a production service or autonomous penetration-testing agent.
+Research software, generated synthetic datasets, and figures authored by Samuel Addington and distributed under the MIT License (2026).
 
-> **Evidence limitations:** All experiments use author-defined synthetic tasks and service behavior. The original local-guard condition models an instantaneous, lossless capacity check; the remote-guard and colocated-manager arms change which messages are delayed or lost. Descriptive world-cluster intervals are not claims of cross-domain generalization. No production/independent distributed deployment was tested.
+> **Release state:** this snapshot is a **proposed v1.1.0 release candidate**. It has not been published as a new GitHub tag or archived under a new Zenodo DOI. The public [v1.0.0 release](https://github.com/SamAddington/ccf-coordination-benchmark/releases/tag/v1.0.0) and [its historical DOI](https://doi.org/10.5281/zenodo.24511437) remain unchanged and do **not** cover these later results.
 
-## Repository contents
+## Research question and scope
 
-| Path | Purpose |
-|---|---|
-| `v25/` | Earlier **4,320-episode** exploratory message-loss sweep; study source and original results |
-| `fairness/run_fair_comparison.py` | **2,592-episode**, 72-cell primary fallback/placement comparison |
-| `fairness/fair_engines.py` | Study-specific fallback and remote/colocated-control variants |
-| `fairness/sensitivity.py` | **1,680-episode** timer, low-loss, burst-loss, and 16-agent sensitivity work |
-| `fairness/results/` | Complete primary CSVs, summaries, descriptive intervals, and negative records |
-| `fairness/sensitivity_results/` | Complete sensitivity records |
-| `v25/results/` | Complete historical CSV and failure records |
-| `fairness/figures/`, `v25/figures/` | Author-generated figures under MIT |
-| `tools/` | Repository-integrity and independent-program consistency checks |
-| `docs/` | Reproduction, methods, licensing, release instructions |
-| `provenance/` | Preserved historical README, manifests, and packaging notes |
-| `LICENSE`, `LICENSE_SCOPE.md` | MIT grant and explicit scope for code, data, and figures |
+This event-driven **synthetic** workload compares service-claim and capacity-permit coordination with redirecting/sticky clients and explicit modeled admission-message costs. An advisory claim that broadcasts then uses a free atomic guard may appear substantially better than a permit manager that pays to request capacity. Pricing claims' service-side admission request/reply removes most of that advantage in the tested workload; the resulting eight-cell completion gap is −3.0 to +4.4 percentage points. A pipelined claim request tests whether admission can overlap settlement, changing the modeled gap to 0.0 to +21.0 points. These results are a benchmark-sensitivity case study, not general protocol superiority, observed production throughput, a distributed lock theorem, or live autonomous cyber assessment.
 
-## Requirements
+The guard is an authored occupancy test, *not* a remotely transacting backend; the priced claim check takes effect upon reply at the applicant. The permit authority reserves capacity as part of its grant, so it is not charged a duplicate guard request. This is a declared architectural asymmetry whose sensitivity is studied, not a proof of perfect message equivalence.
 
-* CPython **3.11+**; no dependencies beyond Python's standard library for the core simulation, verification, and statistical checks.
-* Optional figure recreation: `matplotlib==3.10.8` (recorded drawing environment). See `requirements-figures.txt`.
-* No external services, network targets, cloud account, credentials, or secret tokens are needed.
+## New admission-pricing extension (proposed v1.1.0)
 
-## Quick verification (no experiment data overwritten)
+| Frozen study | Records | Where |
+|---|---:|---|
+| Admission-pricing primary: 12 arms × 12 worlds × 3 trial seeds × 4 loss rates × 2 deadlines | 3,456 | `symmetric/admission_primary/` |
+| Priced delay/deadline grid: 3 arms × 7 delays × 6 deadlines × 2 losses × 12 worlds × 3 trials | 9,072 | `symmetric/admission_priced_grid/` |
+| Claim settlement ablation | 288 | `symmetric/admission_no_settlement/` |
+| **Total new records** | **12,816** | `symmetric/` |
 
-From the repository root:
+All 84 paired priced-grid contrasts and descriptive world-bootstrap intervals are in `symmetric/admission_priced_grid/paired_gaps.csv`.
+
+**Added review-response timing/delay controls:** 288 pipelined claim episodes (`symmetric/settlement_overlap/`), 1,152 fixed-hop-delay comparisons (`symmetric/delay_kernel_controls/`), and 288 fixed-mean/full-settlement controls (`symmetric/fixed_mean_settlement/`). Full tables S1–S3 are in `symmetric/supplementary_review/` and `supplementary/`. See `docs/v29/PROTOCOL_AND_LIMITATIONS.md` for exact rules and boundaries. The three relevant figures are in `symmetric/admission_figures/`. Read [the protocol](docs/v28/ADMISSION_PRICING_PROTOCOL.md) and [experiment summary](docs/v28/STUDY_RESULTS.md) before interpreting the outcomes.
+
+The preceding historical studies are retained *unchanged* in `v25/`, `fairness/`, `symmetric/primary/`, and `symmetric/latency/`; do not pool them as independent confirmations of the admission-pricing experiment. The repository name and directory version labels describe development provenance, not separately validated systems.
+
+## Verify on Linux/macOS/WSL (Python 3.11+)
+
+From this repository's root (core requires only the Python standard library):
 
 ```bash
 python3 tools/verify_release.py
-python3 tools/reproduce.py --mode smoke --out ../ccf_smoke_run1
+python3 tools/reproduce_v28.py --mode smoke --out ../ccf_v28_smoke_01
 ```
 
-The verification checks repository file hashes and archived records. The smoke rerun checks a deterministic source sample against frozen results. **Choose a fresh output path for each attempt**; existing output directories are never overwritten.
-
-## Full exact-data reproduction
+Choose an **unused** output directory. Neither command alters the frozen datasets. For the full 12,816-record exact-data replay:
 
 ```bash
-python3 tools/reproduce.py --mode full --out ../ccf_full_run1
+python3 tools/reproduce_v28.py --mode full --out ../ccf_v28_full_01 \
+  --operator "YOUR NAME" --machine-description "YOUR OS/HARDWARE"
 ```
 
-The full run regenerates **8,592 episodes** (4,320 historical + 2,592 primary + 1,680 sensitivity), compares every record and value to the frozen CSVs, and checks all **72** primary cells and **56** paired world contrasts. Logs, generated data, and a machine-readable verdict are saved *outside* the repository. The numerical checker does not authenticate the identity of the computer/operator or constitute independent third-party replication. More in [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
+The full run compares every CSV value and requires byte-identical dataset hashes. Logs and results are saved outside the repository. Optional plotting uses `matplotlib==3.10.8` from `requirements-figures.txt`; regenerate figures only in a throwaway clone, since that script writes figure paths. See [reproduction documentation](docs/REPRODUCIBILITY.md).
 
-## Figures
+## Current reproduction evidence
 
-The PNG figures are distributed in the repository. Optional regeneration uses Matplotlib:
+- The source authoring environment completed a clean-extraction full run and manifest checks. These are **same-host** checks.
+- The author submitted an Ubuntu/WSL2 **smoke-mode** evidence bundle on 24 November 2026. An audit found 860 of 860 sampled episodes and 18,144 field values matching their frozen references, with 21 internal evidence hashes verified. The operator and machine identity are **self-reported**; the full author-operated 12,816-episode run has **not** been submitted. See [scope-limited smoke evidence](docs/v28/AUTHOR_SMOKE_AUDIT.md).
+- The earlier v1.0.0 study had its own full author-reported Ubuntu/WSL2 reproduction. It does not verify this added study.
+
+## Full review-response reproduction
 
 ```bash
-python3 -m pip install -r requirements-figures.txt
-# This next script writes figures in the source tree; use a temporary clone if comparing against the frozen PNGs.
-python3 fairness/build_analysis.py
+python3 tools/reproduce_v29.py --mode smoke --out ../ccf_v29_smoke_01
+python3 tools/reproduce_v29.py --mode full --out ../ccf_v29_full_01 \
+  --operator "YOUR NAME" --machine-description "YOUR REAL OS AND HARDWARE"
 ```
 
-## Research interpretation
-
-The primary design crosses **9 controller/guard arrangements × 4 Bernoulli message-loss rates × 2 deadlines × 12 worlds × 3 trial seeds**, giving 2,592 episodes. Failure records are retained (zero recorded execution failures). The earlier 4,320 episodes and 1,680 sensitivity episodes have distinct purposes and **must not be pooled into a single independent-effect estimate**. See [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md) for definitions and limitations.
-
-**Author-reported reproduction:** A separately submitted Ubuntu/WSL2 run on an AMD 7945HX machine reported 8,592/8,592 matching episodes and zero failed executions. An audit verified the supplied runner fingerprint and logs; machine identity and operator control remain self-reported. The original raw operator logs are not included in this public source repository. This is not third-party replication.
+Choose a fresh output path for every run. Both modes verify the original admission data and the new timing/delay records; the full mode also reconstructs all supplementary tables and retains logs outside the repository. Local replay is **not** independent third-party replication. Read `docs/v29/AUTHOR_REPRODUCTION_AND_RELEASE.md`.
 
 ## Licensing and citation
 
-**Copyright © 2026 Samuel Addington.** MIT applies to the original code, author-generated synthetic CSV/JSON data, and author-generated PNG figures. See [LICENSE_SCOPE.md](LICENSE_SCOPE.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The publisher-formatted IEEE Access manuscript, IEEE logo/template, and third-party publications are **not included**. Use GitHub's **Cite this repository** control (from `CITATION.cff`) to cite the software. Update that file with a **real, verified version DOI only after** one is assigned.
+Copyright © 2026 Samuel Addington. The MIT License covers original source, synthetic data, and author-generated figures. See `LICENSE`, `LICENSE_SCOPE.md`, `DATA_AND_FIGURES_MIT_NOTICE.md`, and `THIRD_PARTY_NOTICES.md`. No IEEE-branded publisher manuscript or third-party full-text paper is bundled.
 
-Publication steps: [docs/GITHUB_PUBLISHING.md](docs/GITHUB_PUBLISHING.md) and [docs/ZENODO_ARCHIVING.md](docs/ZENODO_ARCHIVING.md). No repository URL, Zenodo DOI, third-party code license, or independent validation is invented here.
-
-## Limitations
-
-This is a research prototype and benchmark harness, not a production multi-agent controller. Results are model-specific and partially dependent on intentionally contrasted control-plane assumptions. The underlying simulation and script parameters, rather than an independently calibrated real-service workload, determine the performance outcomes. Please report the full experimental conditions when citing a number.
+Use `CITATION.cff` for software citation. **The new v1.1.0 version DOI is intentionally absent pending deposit.** Cite the historical v1.0.0 DOI only for that older artifact. See [publication steps](docs/GITHUB_PUBLISHING.md) and [release status](RELEASE_STATUS.md).

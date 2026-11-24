@@ -1,0 +1,52 @@
+{
+  "world_indices": [
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231
+  ],
+  "seeds": [
+    71011,
+    71012,
+    71013
+  ],
+  "losses": [
+    0.0,
+    0.05,
+    0.2,
+    0.35
+  ],
+  "deadlines": [
+    16.0,
+    54.0
+  ],
+  "arms": [
+    "claim_redirect_free",
+    "claim_redirect_remote",
+    "claim_sticky_free",
+    "claim_sticky_remote",
+    "permit_redirect_free",
+    "permit_redirect_remote",
+    "permit_sticky_free",
+    "permit_sticky_remote",
+    "independent_local",
+    "independent_remote_guard"
+  ],
+  "episodes": 2880,
+  "failures": 0,
+  "comparison_conditions": 80,
+  "contrasts": 72,
+  "source_sha256": {
+    "run_symmetric.py": "84d0bb35a1c341f2f4dffcf02c95be67981e6020c6f4b8284573aff587ef6a96",
+    "symmetry_design.py": "f7baaa6aa223e545dbf87ebc26d6eaaf17f98dc0b571e2a1cc45830799239eeb"
+  },
+  "scope": "exploratory synthetic, no physical experiments; same generated worlds as prior release for paired contrasts"
+}

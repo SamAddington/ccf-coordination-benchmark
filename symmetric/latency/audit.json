@@ -1,0 +1,33 @@
+{
+  "episodes": 6048,
+  "failures": 0,
+  "condition_rows": 168,
+  "paired_contrasts": 84,
+  "loss_levels": [
+    0.0,
+    0.2
+  ],
+  "deadlines": [
+    8.0,
+    12.0,
+    16.0,
+    24.0,
+    36.0,
+    54.0
+  ],
+  "per_hop_delays": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.95,
+    1.3,
+    1.8
+  ],
+  "worlds": 12,
+  "trial_seeds": 3,
+  "bootstrap_draws": 4000,
+  "bootstrap_seed": 2602,
+  "bootstrap_unit": "generated world",
+  "scope": "post-review exploratory synthetic per-hop fixed-delay crossover; no third-party independent validation"
+}

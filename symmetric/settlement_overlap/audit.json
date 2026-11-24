@@ -1,0 +1,6 @@
+{
+  "episodes": 288,
+  "failures": 0,
+  "cells": 8,
+  "method": "guard RPC overlaps settlement; actual start waits for both; capacity checked only at action start; same 12 previously used worlds"
+}
