@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate release SHA-256 manifest and expected v26 evidence inventory (stdlib)."""
+"""Validate the proposed v1.1.0 repository manifest and all frozen data counts (stdlib)."""
 from pathlib import Path
 import hashlib, json, sys, csv
 ROOT=Path(__file__).resolve().parents[1]
@@ -39,13 +39,21 @@ def run():
        'v25/results/episodes.csv':4320,
        'fairness/results/episodes.csv':2592,
        'fairness/sensitivity_results/episodes.csv':1680,
+       'symmetric/primary/episodes.csv':2880,
+       'symmetric/latency/episodes.csv':6048,
+       'symmetric/admission_primary/episodes.csv':3456,
+       'symmetric/admission_priced_grid/episodes.csv':9072,
+       'symmetric/admission_no_settlement/episodes.csv':288,
+       'symmetric/settlement_overlap/episodes.csv':288,
+       'symmetric/delay_kernel_controls/episodes.csv':1152,
+       'symmetric/fixed_mean_settlement/episodes.csv':288,
     }
     for path,n in expected.items():
        with (root/path).open(encoding='utf-8',newline='') as f:
            rs=list(csv.DictReader(f))
        if len(rs)!=n:raise RuntimeError(f'Unexpected row count for {path}: {len(rs)} != {n}')
     report={'pass':True,'sha256_files_checked':checked,'episode_counts':expected,
-            'total_episodes':sum(expected.values()),'release':'source/data/figures MIT; synthetic benchmark'}
+            'total_episodes':sum(expected.values()),'release':'proposed v1.1.0 candidate (not published); MIT original code/data/figures; exploratory synthetic benchmark'}
     print(json.dumps(report,indent=2));return report
 if __name__=='__main__':
     try:run()

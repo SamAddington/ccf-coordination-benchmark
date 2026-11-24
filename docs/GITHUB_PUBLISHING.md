@@ -1,62 +1,53 @@
-# Upload this package to GitHub
+# Publish this snapshot as the next version of an EXISTING GitHub repository
 
-The ZIP contains a **repository directory named `ccf-coordination-benchmark`**. Unzip it and change into that directory before running Git commands. A GitHub account and a local Git installation are needed. The following commands are examples to run **on your computer**, not steps already completed by this package.
+**Repository:** `SamAddington/ccf-coordination-benchmark`  
+**Existing published tag:** `v1.0.0` — do not delete or repoint it.  
+**Proposed new tag:** `v1.1.0` — not yet published.  
+**New DOI:** none; wait for Zenodo to archive the new release.
 
-## 1. Inspect before publishing
+The ZIP contains a full directory `ccf-coordination-benchmark`. **Do not create a second repository** and do not upload the ZIP as one file in the Git tree.
+
+## Stage and test locally
 
 ```bash
+unzip CCF_v28_GitHub_v1.1.0_Candidate_20261124.zip
+cd ccf-coordination-benchmark
 python3 tools/verify_release.py
-python3 tools/reproduce.py --mode smoke --out ../ccf_smoke_before_publish
+python3 tools/reproduce_v28.py --mode smoke --out ../ccf_v28_smoke_before_release_01
 ```
 
-Confirm the license scope and notices. `CITATION.cff` intentionally has **no DOI** until one is actually assigned.
+Make sure all 119+ manifest files pass and the smoke report succeeds. Run `--mode full` on your separate author-controlled computer and retain the full output, logs, and signed attestation before publishing a citable release.
 
-## 2. Create repository
+## Update the existing GitHub repository
 
-Option A: Use the GitHub web UI. Create an **empty public** repository named `ccf-coordination-benchmark` without initializing a README/license/.gitignore (they are already in this package), then run:
+Use a fresh local clone (requires Git authentication and author approval):
 
 ```bash
-git init -b main
-git add .
-git commit -m "Release CCF coordination benchmark source, data, and figures (MIT)"
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/ccf-coordination-benchmark.git
-git push -u origin main
+git clone https://github.com/SamAddington/ccf-coordination-benchmark.git existing-ccf
+cd existing-ccf
+git checkout main
 ```
 
-Option B: If GitHub CLI (`gh`) is authenticated, you may create it from the directory (this **publishes publicly**):
+Copy the **contents** of the extracted candidate `ccf-coordination-benchmark/` into this clone, including the hidden `.github/` and `.gitignore` files. Review `git status --short`, run `python3 tools/verify_release.py`, and inspect `git diff --stat` and the full changes. **Do not accidentally delete pre-existing repository files that are not part of the candidate**. If source files on GitHub changed after this snapshot, reconcile them instead of blindly overwriting.
 
 ```bash
-git init -b main
-git add .
-git commit -m "Release CCF coordination benchmark source, data, and figures (MIT)"
-gh repo create ccf-coordination-benchmark --public --source=. --remote=origin --push
+git add -A
+git commit -m "Add admission-pricing experiments and reproduction evidence (v1.1.0)"
+git push origin main
 ```
 
-Replace `YOUR_GITHUB_USERNAME` where used. Do not paste a personal access token into an issue, README, or chat.
-
-## 3. Tag an immutable research snapshot
-
-After the public repo is reviewed, create and push an annotated tag:
+**Only after approving the complete version:**
 
 ```bash
-git tag -a v1.0.0 -m "CCF v26 verified synthetic benchmark and MIT data release"
-git push origin v1.0.0
-```
-
-Then create a GitHub Release through the web UI or:
-
-```bash
-gh release create v1.0.0 --verify-tag \
-  --title "CCF Coordination Benchmark v1.0.0" \
+git tag -a v1.1.0 -m "CCF admission-pricing benchmark v1.1.0"
+git push origin v1.1.0
+gh release create v1.1.0 --verify-tag \
+  --title "CCF Coordination Benchmark v1.1.0 — Admission Pricing and Client Policy" \
   --notes-file RELEASE_NOTES.md
 ```
 
-Enabling GitHub immutable releases is optional, but once enabled, confirm assets before publication. Do not rewrite published history or reuse the tag for different experiment code/data.
+## Zenodo / manuscript
 
-## 4. DOI archiving
+Check Zenodo GitHub integration is enabled. Verify Zenodo published a **new version** for tag `v1.1.0` with the correct file contents and MIT license. Use its **actual version DOI**, not the historical `10.5281/zenodo.24511437`, for the new manuscript. After the DOI resolves publicly, update `CITATION.cff` on the continuing development branch, and update the manuscript availability statement with the real link. Do not retarget the immutable release tag to include this subsequent citation update.
 
-See [docs/ZENODO_ARCHIVING.md](ZENODO_ARCHIVING.md). Activate Zenodo for the **public repository**, and create a GitHub Release. Zenodo can assign a version DOI for the snapshot. Wait until the DOI resolves, then add that real DOI to `CITATION.cff` and the manuscript data/code availability section. Do not invent a DOI before deposit.
-
-## 5. Verification after upload
-
-Open the public repository in a signed-out/private browser window; check `LICENSE`, `CITATION.cff`, `fairness/results/episodes.csv`, figures, the GitHub Actions checks, and release contents. Record the **commit hash, tag, and DOI** in your research audit.
+See `docs/ZENODO_ARCHIVING.md` and `RELEASE_STATUS.md` for caveats. No repository write or DOI publication is performed by this packaging step.

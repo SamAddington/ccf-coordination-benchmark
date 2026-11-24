@@ -1,0 +1,36 @@
+{
+  "status": "LOCAL_EVIDENCE_AND_PARITY_CHECK_PASSED",
+  "generated_date": "2026-11-24",
+  "computed_python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "new_episodes": {
+    "primary": 3456,
+    "priced_grid": 9072,
+    "settlement": 288,
+    "total": 12816
+  },
+  "failed_runs": 0,
+  "historical_parity_records": {
+    "v27_claim_redirect_remote_unchanged": 288,
+    "v27_permit_redirect_remote_unchanged": 288,
+    "v26_claim_remote_price_matches": 288
+  },
+  "summary_rows": 96,
+  "primary_contrasts": 96,
+  "grid_summary_rows": 252,
+  "grid_contrasts_all": 252,
+  "priced_grid_contrasts": 84,
+  "priced_grid_negative_means": 4,
+  "priced_grid_negative_CI_upper_below_zero": 1,
+  "timing_summary_rows": 8,
+  "archive_doi": "NOT_ASSIGNED_V28",
+  "old_zenodo_doi_v1": "10.5281/zenodo.24511437",
+  "author_second_machine_rerun_v28": "NOT_PERFORMED",
+  "experiment_type": "exploratory synthetic; not external validation",
+  "source_hashes": {
+    "run_admission.py": "2fcb20d7e9b03fbf0d47e9afccabb715bd956fe931f5495ac01d1b0f8e24d1ee",
+    "admission_symmetric.py": "3c196d2000589ca27edf31068853e348649e9ec3cb6c3910fff552b9d55bc189",
+    "run_priced_grid.py": "213dc9d2817b49e6b28cca8a3405d1904b8bbb111f2fb2d6a32264db3f7abeca",
+    "run_settlement_ablation.py": "114506d0857095f82654b18b79aae96d6f231f4608e4a8b93eaa4d0807945a8b"
+  }
+}
